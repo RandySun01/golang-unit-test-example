@@ -4,6 +4,8 @@ import (
 	"fmt"
 	"reflect"
 	"testing"
+
+	"github.com/stretchr/testify/assert"
 )
 
 /*
@@ -154,12 +156,12 @@ func ExampleSplit() {
 	// [梦里有 ,我要吃 ]
 }
 
-//func TestAssertSplit(t *testing.T) {
-//	got := Split("a:b:c", ":")         // 程序输出结果
-//	want := []string{"a", "b", "c"}    // 期望的结果
-//	if !reflect.DeepEqual(want, got) { // slice不能直接比较,借助反射包中方法比较
-//		t.Errorf("expected: %v, got: %v", want, got) // 测试失败输出错误提示
-//	}
-//	assert.Equal(t, got, want) // 使用assert提供的断言函数
-//
-//}
+func TestAssertSplit(t *testing.T) {
+	got := Split("a:b:c", ":")      // 程序输出结果
+	want := []string{"a", "b", "c"} // 期望的结果
+	//if !reflect.DeepEqual(want, got) { // slice不能直接比较,借助反射包中方法比较
+	//	t.Errorf("expected: %v, got: %v", want, got) // 测试失败输出错误提示
+	//}
+	assert.Equal(t, got, want) // 使用assert提供的断言函数
+
+}
