@@ -28,6 +28,7 @@ require (
 	github.com/modern-go/concurrent v0.0.0-20180228061459-e0a39a4cb421 // indirect
 	github.com/modern-go/reflect2 v0.0.0-20180701023420-4b7aa43c6742 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
+	github.com/prashantv/gostub v1.1.0 // indirect
 	github.com/ugorji/go/codec v1.1.7 // indirect
 	github.com/yuin/gopher-lua v0.0.0-20210529063254-f4c35e4016d9 // indirect
 	golang.org/x/crypto v0.0.0-20200622213623-75b288015ac9 // indirect
